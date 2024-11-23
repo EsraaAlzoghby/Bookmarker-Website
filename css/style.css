@@ -1,0 +1,98 @@
+/* header */
+.text {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(253,81,134,0.245));
+    font-size: 55px;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FD5186 ;
+  }
+.text span {
+    position: relative;
+    display: inline-block;
+    animation: animations 1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+    transition:  0.7s;
+  }
+@keyframes animations {
+    0%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+  }
+/* end-header */
+/* form */
+.form-control:focus {
+     border-color: #FD5186; 
+     box-shadow: 0 0 0 0.25rem rgba(253,81,134,0.645);
+    }
+.buttonOne .btn {
+    color: #ffcfde;
+    background-color: #f31054;
+}
+.buttonOne .btn:hover{
+    background-color: #ffcfde ;
+    color: #f31054 ;
+    font-style: 800 !important;
+}
+/* end-form */
+/* table */
+.button-table{
+    border-color: #f31054;
+    color: #f31054;
+}
+.button-table:hover{
+background-color: #f31054;
+color: #ffcfde;
+font-style: 800 !important;
+}
+/* end table */
+/* Start media queries */
+@media (min-width: 992px) and (max-width: 1400px) {
+    .button-table {
+        width: 100px !important;
+    }
+    .buttonOne .btn {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .button-table {
+        width: 100px !important;
+    }
+    .buttonOne .btn {
+        font-size: 20px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .text {
+        font-size: 50px;
+    }
+    .button-table {
+        width: 100px !important;
+        font-size: 15px;
+    }
+    .buttonOne .btn {
+        font-size: 20px;
+        width: 200px !important;
+    }
+}
+@media (max-width: 576px) {
+    .text {
+        font-size: 30px;
+    }
+    .button-table {
+        width: 90px !important;
+        font-size: 12px;
+        text-align: center;
+    }
+    .buttonOne .btn {
+        font-size: 20px;
+        width: 200px !important;
+    }
+}
