@@ -1,5 +1,5 @@
 # Bookmarker LocalStorage App
-A simple and intuitive web application to save, organize, and manage your favorite bookmarks efficiently.
+A simple and intuitive web application to save, your favorite bookmarks efficiently.
 ## Technologies Used
 <ul>
   <li> <b>HTML5:</b>[Semantic Tags].</li>
